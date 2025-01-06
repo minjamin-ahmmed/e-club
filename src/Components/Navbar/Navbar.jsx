@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import logo from "../../assets/E-Club Logo.svg";
 
 const Navbar = () => {
@@ -25,9 +26,11 @@ const Navbar = () => {
             tabIndex={0}
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
           >
-            <li>
-              <a>Home</a>
-            </li>
+            <Link to="/">
+              <li>
+                <p>Home</p>
+              </li>
+            </Link>
             <li>
               <details>
                 <summary>Committee</summary>
@@ -99,15 +102,20 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <div>
-          <img src={logo} alt="Navbar Logo" />
-        </div>
+        <Link to="/">
+          <div>
+            <img src={logo} alt="Navbar Logo" />
+          </div>
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal text-gray-700 font-normal px-1">
-          <li>
-            <a>Home</a>
-          </li>
+          <Link to="/">
+            {" "}
+            <li>
+              <p>Home</p>
+            </li>
+          </Link>
           <li>
             <details>
               <summary>Committee</summary>
@@ -180,12 +188,16 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end gap-2">
-        <button className="text-[14px] font-semibold text-gray-700 border border-gray-300 px-4 py-2 rounded-md shadow">
-          Member Login
-        </button>
+        <Link to="/login">
+          <button className="text-[14px] font-semibold text-gray-700 border border-gray-300 px-4 py-2 rounded-md shadow">
+            Member Login
+          </button>
+        </Link>
+        <Link to="joinAsMember">
         <button className="text-[14px] font-semibold text-white bg-[#056049] px-4 py-2 rounded-md">
           Join As Member
         </button>
+        </Link>
       </div>
     </div>
   );

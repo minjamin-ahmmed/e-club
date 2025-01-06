@@ -1,4 +1,6 @@
 import proshar from "../../assets/Proshar.svg";
+import networkBasket from "../../assets/Network Basket.png";
+import mentorAcceleration from "../../assets/Mentor.png";
 import vinnota from "../../assets/Vinnota.svg";
 import eshop from "../../assets/E-Shop.svg";
 import bondhon from "../../assets/Bondhon.svg";
@@ -19,7 +21,7 @@ const Projects = () => {
 
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 w-11/12 lg:w-9/12 mx-auto mb-16">
         <div className="bg-[#FCFCFD] rounded-2xl px-10 py-20 flex items-center justify-center border border-gray-300">
-          <img src={proshar} alt="" />
+          <img src={networkBasket} alt="" />
         </div>
 
         <div className="bg-[#FCFCFD] rounded-2xl px-10 py-20 flex items-center justify-center border border-gray-300">
@@ -31,11 +33,11 @@ const Projects = () => {
         </div>
 
         <div className="bg-[#FCFCFD] rounded-2xl px-10 py-20 flex items-center justify-center border border-gray-300">
-          <img src={proshar} alt="" />
+          <img src={networkBasket} alt="" />
         </div>
 
         <div className="bg-[#FCFCFD] rounded-2xl px-10 py-20 flex items-center justify-center border border-gray-300">
-          <img src={proshar} alt="" />
+          <img src={mentorAcceleration} alt="" />
         </div>
 
         <div className="bg-[#FCFCFD] rounded-2xl px-10 py-20 flex items-center justify-center border border-gray-300">

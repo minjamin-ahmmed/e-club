@@ -7,6 +7,7 @@ import "swiper/css/scrollbar";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination } from "swiper/modules";
+import { Link } from "react-router-dom";
 
 const Banner = () => {
   const images = [bannerImg, bannerImg, bannerImg];
@@ -52,12 +53,14 @@ const Banner = () => {
           owners, entrepreneurs, and professionals in Bangladesh.
         </p>
         <div className="flex items-center justify-end">
-          <button className="text-[14px] font-semibold text-white bg-[#056049] px-4 py-2 rounded-md">
-            <div className="flex items-center gap-2">
-              <span>Join As a Member</span>
-              <ArrowRight size={24} />
-            </div>
-          </button>
+          <Link to="/joinAsMember">
+            <button className="text-[14px] font-semibold text-white bg-[#056049] px-4 py-2 rounded-md">
+              <div className="flex items-center gap-2">
+                <span>Join As a Member</span>
+                <ArrowRight size={24} />
+              </div>
+            </button>
+          </Link>
         </div>
       </div>
     </div>

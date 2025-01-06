@@ -5,6 +5,7 @@ import accessFunding from "../../assets/access.svg";
 import industry from "../../assets/industry.svg";
 import community from "../../assets/community.svg";
 import { ArrowRight } from "@phosphor-icons/react";
+import { Link } from "react-router-dom";
 
 const Features = () => {
   return (
@@ -136,12 +137,14 @@ const Features = () => {
       </div>
 
       <div className="flex items-center justify-center">
-        <button className="text-[14px] font-semibold text-white bg-[#056049] px-4 py-2 rounded-md">
-          <div className="flex items-center gap-2">
-            <span>Join As a Member</span>
-            <ArrowRight size={24} />
-          </div>
-        </button>
+        <Link to="/joinAsMember">
+          <button className="text-[14px] font-semibold text-white bg-[#056049] px-4 py-2 rounded-md">
+            <div className="flex items-center gap-2">
+              <span>Join As a Member</span>
+              <ArrowRight size={24} />
+            </div>
+          </button>
+        </Link>
       </div>
     </div>
   );
